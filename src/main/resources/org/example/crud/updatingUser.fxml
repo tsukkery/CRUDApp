@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Text?>
+<VBox xmlns:fx="http://javafx.com/fxml" spacing="10" alignment="CENTER" fx:controller="org.example.crud.AddingUserController">
+    <Text text="Введите новое имя сущности"></Text>
+    <TextField fx:id="inputField1" prefWidth="180" maxWidth="180" promptText="Введите имя"/>
+    <Button text="Подтвердить" onAction="#handleConfirm" fx:id="updateButton"/>
+</VBox>

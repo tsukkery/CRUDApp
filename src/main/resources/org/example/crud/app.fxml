@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+    <AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="org.example.crud.AppController">
+        <TextField fx:id="searchField" promptText="Поиск..." maxWidth="150" AnchorPane.leftAnchor="60" AnchorPane.topAnchor="10"/>
+        <TableView layoutX="8.0" layoutY="65.0" prefHeight="262.0" prefWidth="584.0" fx:id="tableView" AnchorPane.bottomAnchor="55">
+            <columns>
+                <TableColumn prefWidth="87.20001220703125" text="Index" fx:id="indexColumn"/>
+                <TableColumn prefWidth="125.5999755859375" text="ID" fx:id="idColumn"/>
+                <TableColumn prefWidth="131.20001220703125" text="Name" fx:id="nameColumn"/>
+                <TableColumn prefWidth="120.79998779296875" text="CreatedAt" fx:id="createdColumn"/>
+                <TableColumn prefWidth="116.800048828125" text="UpdatedAt" fx:id="updatedColumn"/>
+            </columns>
+        </TableView>
+
+        <HBox spacing="20" alignment="CENTER" AnchorPane.bottomAnchor="10" AnchorPane.leftAnchor="190">
+            <Button layoutX="14.0" layoutY="31.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="84.0" text="Add" onAction="#clickAdd" fx:id="add"/>
+            <Button layoutX="14.0" layoutY="31.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="84.0" text="Reload" onAction="#clickUpd" fx:id="upd"/>
+        </HBox>
+    </AnchorPane>
+
